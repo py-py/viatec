@@ -1,6 +1,6 @@
-# Make directory
+# Make repo and directory
 ```bash
-mkdir viatec
+git clone https://github.com/py-py/viatec.git
 cd viatec
 ```
 
