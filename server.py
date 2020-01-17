@@ -31,8 +31,9 @@ class ViatecTFTPServerHandler(TFTPServerHandler):
         except SyntaxError:
             return None
         else:
-            # HERE!
-            pass
+            with open("log.txt", "a") as file:
+                file.write(filename)
+                file.write("\n")
 
         peer_state = state.TFTPState(
             self.client_address,
